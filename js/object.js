@@ -15,3 +15,10 @@ const studentBio = {
     roll: 12,
     subject: "Economy",
 };
+function getSalary(player) {
+    return player.salary;
+}
+getSalary({ name: "Rohim", salary: 50 });
+function getSalary2(player) {
+    return player.salary;
+}
