@@ -33,3 +33,11 @@ function doubleConsole(num3) {
     console.log(3 * num3);
 }
 doubleConsole(4);
+let play = "naymer";
+console.log(play);
+let FullName = (first, last) => first + last;
+// const numbers = [12, 13, 45, 77, 13, 78];
+// const ages: [number];
+// let ages: [numbers];
+// const numbers: number[12,24,44,44,89,11];
+const ages = [12, 45, 77, 98, 12, 12];

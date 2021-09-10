@@ -41,3 +41,14 @@ function doubleConsole(num3: number): void {
 }
 
 doubleConsole(4);
+
+let play: number | string = "naymer";
+console.log(play);
+
+let FullName = (first: string, last: string) => first + last;
+
+// const numbers = [12, 13, 45, 77, 13, 78];
+// const ages: [number];
+// let ages: [numbers];
+// const numbers: number[12,24,44,44,89,11];
+const ages: number[] = [12, 45, 77, 98, 12, 12];
