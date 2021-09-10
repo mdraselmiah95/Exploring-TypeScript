@@ -17,3 +17,9 @@ const employee: person = {
   age: 32,
   salary: 35000,
 };
+
+const studentBio: { name: string; roll: number; subject: string } = {
+  name: "Rohim",
+  roll: 12,
+  subject: "Economy",
+};

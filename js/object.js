@@ -10,3 +10,8 @@ const employee = {
     age: 32,
     salary: 35000,
 };
+const studentBio = {
+    name: "Rohim",
+    roll: 12,
+    subject: "Economy",
+};
