@@ -23,3 +23,13 @@ const studentBio: { name: string; roll: number; subject: string } = {
   roll: 12,
   subject: "Economy",
 };
+
+function getSalary(player: { name: string; salary: number }): number {
+  return player.salary;
+}
+
+getSalary({ name: "Rohim", salary: 50 });
+
+function getSalary2(player: person): number {
+  return player.salary;
+}
