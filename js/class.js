@@ -3,6 +3,11 @@ class Car {
     constructor(model, price) {
         this.model = model;
         this.price = price;
+        this._millage = 10000;
+    }
+    getActualMillage() {
+        const realMillage = this._millage + 5000;
+        return realMillage;
     }
     getTotalPrice(tax) {
         const taxAmount = (this.price * tax) / 100;
