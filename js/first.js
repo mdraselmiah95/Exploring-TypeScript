@@ -29,3 +29,7 @@ function addNumber(num, num2) {
 }
 const output = add(12, 10);
 console.log(output);
+function doubleConsole(num3) {
+    console.log(3 * num3);
+}
+doubleConsole(4);
