@@ -19,3 +19,11 @@ const add = (one: number, two: number) => {
 };
 const newNumber = add(12, 11);
 console.log(newNumber);
+
+function sum(numOne: number, numTwo: number) {
+  const total = numOne * numTwo;
+  return total;
+}
+
+const newTotal = sum(10, 11);
+console.log(newTotal);
