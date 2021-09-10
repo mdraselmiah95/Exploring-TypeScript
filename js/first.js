@@ -10,3 +10,4 @@ let taka = 9000;
 // console.log(taka);
 let nameOne = "This is a string type.";
 let isHappy = false;
+const age = 25;

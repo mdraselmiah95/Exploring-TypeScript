@@ -11,3 +11,4 @@ let taka: number = 9000;
 
 let nameOne: string = "This is a string type.";
 let isHappy: boolean = false;
+const age: number = 25;
