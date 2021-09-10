@@ -11,3 +11,9 @@ let taka = 9000;
 let nameOne = "This is a string type.";
 let isHappy = false;
 const age = 25;
+const add = (one, two) => {
+    const result = one + two;
+    return result;
+};
+const newNumber = add(12, 11);
+console.log(newNumber);
