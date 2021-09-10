@@ -7,4 +7,7 @@ let money = 9000;
 // money = false;
 money = 6059;
 let taka: number = 9000;
-console.log(taka);
+// console.log(taka);
+
+let nameOne: string = "This is a string type.";
+let isHappy: boolean = false;
