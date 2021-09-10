@@ -23,3 +23,9 @@ function sum(numOne, numTwo) {
 }
 const newTotal = sum(10, 11);
 console.log(newTotal);
+function addNumber(num, num2) {
+    const result = num + num2;
+    return result;
+}
+const output = add(12, 10);
+console.log(output);
