@@ -1,5 +1,5 @@
 "use strict";
-var myName = "Rasel miah";
+var myName = "Rasel mia";
 var age = 99;
 age = "45";
 age = true;

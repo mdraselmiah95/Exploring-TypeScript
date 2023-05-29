@@ -1,4 +1,4 @@
-let myName: string = "Rasel miah";
+let myName: string = "Rasel mia";
 let age: number | string | boolean | [] = 99;
 age = "45";
 age = true;
