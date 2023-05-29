@@ -35,10 +35,17 @@ player.clubs = (_a = player.clubs) === null || _a === void 0 ? void 0 : _a.map(f
 // console.log({ player }, player.clubs);
 var Friends;
 (function (Friends) {
-    Friends[Friends["Mia"] = 0] = "Mia";
-    Friends[Friends["Ethan"] = 1] = "Ethan";
-    Friends[Friends["Lily"] = 2] = "Lily";
-    Friends[Friends["Jackson"] = 3] = "Jackson";
-    Friends[Friends["Ava"] = 4] = "Ava";
+    Friends[Friends["Mia"] = 10] = "Mia";
+    Friends[Friends["Ethan"] = 9] = "Ethan";
+    Friends[Friends["Lily"] = 21] = "Lily";
+    Friends[Friends["Jackson"] = 11] = "Jackson";
+    Friends[Friends["Ava"] = 31] = "Ava";
 })(Friends || (Friends = {}));
-console.log({ Friends: Friends });
+var Config;
+(function (Config) {
+    Config["API_KEY"] = "api_key";
+    Config["Domain_Name"] = "domain_name";
+})(Config || (Config = {}));
+console.log(Config.API_KEY);
+// console.log(Friends.Ava);
+// console.log(Friends[11]);

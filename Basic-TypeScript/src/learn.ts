@@ -53,10 +53,19 @@ player.clubs = player.clubs?.map((club) => club.toUpperCase());
 // console.log({ player }, player.clubs);
 
 enum Friends {
-  Mia,
-  Ethan,
-  Lily,
-  Jackson,
-  Ava,
+  Mia = 10,
+  Ethan = 9,
+  Lily = 21,
+  Jackson = 11,
+  Ava = 31,
 }
-console.log({ Friends });
+
+enum Config {
+  API_KEY = "api_key",
+  Domain_Name = "domain_name",
+}
+
+console.log(Config.API_KEY);
+
+// console.log(Friends.Ava);
+// console.log(Friends[11]);
