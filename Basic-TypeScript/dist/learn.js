@@ -133,3 +133,14 @@ var personTwo = {
     ],
     isLoggedIn: true,
 };
+// typeof personTwo.phone === "string" ||
+//   personTwo.phone.map((value) => value.toUpperCase());
+/**
+ *  !(typeof personTwo.phone === "string") &&
+  personTwo.phone.map((value) => value.toUpperCase());
+ */
+// if (Array.isArray(person.phone)) {
+//   personTwo.phone.map((val) => val.toUpperCase());
+// } else {
+//   person.phone.toUpperCase();
+// }
