@@ -104,3 +104,32 @@ var person = {
         },
     ],
 };
+var personOne = {
+    name: "Rasel",
+    email: "X@gmail.com",
+};
+var addOne = function (num1, num2, num3) {
+    if (num3 === void 0) { num3 = 0; }
+    return num1 + num2 + num3;
+};
+var personTwo = {
+    name: "Rasel",
+    email: "rasel@gamil.com",
+    age: 26,
+    phone: ["78676"],
+    address: {
+        perAddress: "x",
+        preAddress: "y",
+    },
+    favorites: [
+        {
+            type: "food",
+            value: "Rice",
+        },
+        {
+            type: "player",
+            value: "Messis",
+        },
+    ],
+    isLoggedIn: true,
+};

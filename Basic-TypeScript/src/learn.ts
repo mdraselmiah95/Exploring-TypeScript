@@ -159,3 +159,68 @@ const person: Person = {
     },
   ],
 };
+
+// Difference between Type and Alias and Interface ⏳
+
+interface PersonOne {
+  name: string;
+  email: string;
+}
+
+let personOne: PersonOne = {
+  name: "Rasel",
+  email: "X@gmail.com",
+};
+
+interface AddOne {
+  (num1: number, num2: number, num3?: number): number;
+}
+
+const addOne: AddOne = (num1, num2, num3 = 0) => {
+  return num1 + num2 + num3;
+};
+
+interface AddressOne {
+  preAddress: string;
+  perAddress: string;
+}
+
+interface FavoriteOne {
+  type: "food" | "player" | "singer" | "actor";
+  value: string;
+}
+
+interface Auth {
+  isLoggedIn: boolean;
+}
+
+interface PersonTwo extends Auth {
+  name: string;
+  age: number;
+  phone: string | string[];
+  email: string;
+  address: AddressOne;
+  favorites: FavoriteOne[];
+}
+
+const personTwo: PersonTwo = {
+  name: "Rasel",
+  email: "rasel@gamil.com",
+  age: 26,
+  phone: ["78676"],
+  address: {
+    perAddress: "x",
+    preAddress: "y",
+  },
+  favorites: [
+    {
+      type: "food",
+      value: "Rice",
+    },
+    {
+      type: "player",
+      value: "Messis",
+    },
+  ],
+  isLoggedIn: true,
+};
