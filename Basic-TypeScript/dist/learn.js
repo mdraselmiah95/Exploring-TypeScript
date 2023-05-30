@@ -74,9 +74,33 @@ var add = function () {
     return numbers.reduce(func, 0);
 };
 var addNum;
+// let addNum:Function
 addNum = function (num1, num2, num3) {
     if (num3 === void 0) { num3 = 0; }
     return num1 + num2 + num3;
 };
 var result = addNum(10, 50, 40);
-console.log(result);
+var fName = "Shakib";
+var arr = ["Rasel"];
+var players;
+var addSum;
+var person = {
+    name: "Rasel",
+    email: "rasel@gamil.com",
+    age: 26,
+    phone: ["78676"],
+    address: {
+        perAddress: "x",
+        preAddress: "y",
+    },
+    favorites: [
+        {
+            type: "food",
+            value: "Rice",
+        },
+        {
+            type: "player",
+            value: "Messis",
+        },
+    ],
+};

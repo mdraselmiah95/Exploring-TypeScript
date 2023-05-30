@@ -98,10 +98,64 @@ const add = (...numbers: number[]): number => {
 };
 
 let addNum: (num1: number, num2: number, num3?: number) => number;
+// let addNum:Function
 
 addNum = (num1, num2, num3 = 0) => {
   return num1 + num2 + num3;
 };
 
 const result = addNum(10, 50, 40);
-console.log(result);
+// console.log(result);
+
+// Explore Type Aliases
+type FName = "Rasel" | "Shakib";
+let fName: FName = "Shakib";
+
+type arr = FName[];
+const arr: arr = ["Rasel"];
+
+type Players = [string, string, number, boolean, string];
+let players: Players;
+
+type addNum = (num1: number, num2: number, num3?: number) => number;
+let addSum: addNum;
+
+type Address = {
+  preAddress: string;
+  perAddress: string;
+};
+
+type Favorite = {
+  type: "food" | "player" | "singer" | "actor";
+  value: string;
+};
+
+type Person = {
+  name: string;
+  age: number;
+  phone: string | string[];
+  email: string;
+  address: Address;
+  favorites: Favorite[];
+};
+
+const person: Person = {
+  name: "Rasel",
+  email: "rasel@gamil.com",
+  age: 26,
+  phone: ["78676"],
+  address: {
+    perAddress: "x",
+    preAddress: "y",
+  },
+  favorites: [
+    {
+      type: "food",
+      value: "Rice",
+    },
+    {
+      type: "player",
+      value: "Messis",
+    },
+  ],
+};
