@@ -65,7 +65,43 @@ enum Config {
   Domain_Name = "domain_name",
 }
 
-console.log(Config.API_KEY);
+// console.log(Config.API_KEY);
 
 // console.log(Friends.Ava);
 // console.log(Friends[11]);
+
+// Function Types
+
+// function add(num1: number, num2: number): void {
+//   console.log(num1 + num2);
+// }
+
+// function add(num1: number, num2: number): number {
+//   return num1 + num2;
+// }
+
+// const add = (num1: number, num2: number): number => {
+//   return num1 + num2;
+// };
+
+// const add = (num1: number, num2: number, num3: number): number => {
+//   return num1 + num2 + num3;
+// };
+
+// const add = (num1: number, num2: number, num3: number = 0): number => {
+//   return num1 + num2 + num3;
+// };
+
+const add = (...numbers: number[]): number => {
+  const func = (total: number, curr: number) => total + curr;
+  return numbers.reduce(func, 0);
+};
+
+let addNum: (num1: number, num2: number, num3?: number) => number;
+
+addNum = (num1, num2, num3 = 0) => {
+  return num1 + num2 + num3;
+};
+
+const result = addNum(10, 50, 40);
+console.log(result);
