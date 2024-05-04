@@ -52,3 +52,33 @@ const stdentOne: Student = {
 type Add = (num1: number, num2: number) => number;
 
 const addTwo: Add = (num1, num2) => num1 + num2;
+
+// Ternary, Optional Chaining & Nullish Coalescing Operator
+
+type UserTwo = {
+  name: string;
+  address: {
+    city: string;
+    road: string;
+    presentAddress?: string;
+    permanentAddress: string;
+  };
+};
+
+const userThree: UserTwo = {
+  name: "Rohit",
+  address: {
+    city: "DHK",
+    road: "Love road",
+    permanentAddress: "cool",
+  },
+};
+
+const addressTest = userThree?.address?.presentAddress ?? "No Present Address";
+console.log({ addressTest });
+
+const throwError = (msg: string): never => {
+  throw new Error(msg);
+};
+
+throwError("In the Vog O Ma");

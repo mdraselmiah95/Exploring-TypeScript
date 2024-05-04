@@ -1,4 +1,5 @@
 "use strict";
+var _a, _b;
 var commonUser = {
     company: "Programming Hero",
     firstName: "Rasel",
@@ -32,3 +33,17 @@ var stdentOne = {
     isMarried: false,
 };
 var addTwo = function (num1, num2) { return num1 + num2; };
+var userThree = {
+    name: "Rohit",
+    address: {
+        city: "DHK",
+        road: "Love road",
+        permanentAddress: "cool",
+    },
+};
+var addressTest = (_b = (_a = userThree === null || userThree === void 0 ? void 0 : userThree.address) === null || _a === void 0 ? void 0 : _a.presentAddress) !== null && _b !== void 0 ? _b : "No Present Address";
+console.log({ addressTest: addressTest });
+var throwError = function (msg) {
+    throw new Error(msg);
+};
+throwError("In the Vog O Ma");
