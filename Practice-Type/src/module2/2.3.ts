@@ -19,5 +19,21 @@
     },
   ];
 
+  const add = (x: number, y: number) => x * y;
+  add(30, 44);
+
+  // generic tuple
+  type GenericTuple<X, Y> = [X, Y];
+
+  const manush: GenericTuple<string, string> = ["Mr. X, Mr.y"];
+
+  const manushId: GenericTuple<
+    number,
+    {
+      name: string;
+      email: string;
+    }
+  > = [1233, { name: "Rasel", email: "rasel@gmail.com" }];
+
   //
 }
