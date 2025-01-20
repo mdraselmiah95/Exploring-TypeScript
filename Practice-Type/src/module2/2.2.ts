@@ -43,5 +43,14 @@
 
   const rollNumber1: Roll2 = [1, 2, 4, 5, 6];
 
+  type Add2 = (num1: number, num2: number) => number;
+
+  interface Add3 {
+    (num1: number, num2: number): number;
+  }
+
+  const test3: Add3 = (num1, num2) => num1 * num2;
+
+  test3(2.6, 2);
   //
 }
