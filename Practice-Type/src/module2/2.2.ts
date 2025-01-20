@@ -33,5 +33,15 @@
     age: number;
   }
 
+  // js --> object , array--> object function ->object
+
+  type Roll = number[];
+
+  interface Roll2 {
+    [index: number]: number;
+  }
+
+  const rollNumber1: Roll2 = [1, 2, 4, 5, 6];
+
   //
 }
