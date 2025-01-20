@@ -36,7 +36,7 @@
   > = [1233, { name: "Rasel", email: "rasel@gmail.com" }];
 
   // Define a generic array type to handle arrays of any type
-  type GenericArray<T> = Array<T>;
+  type GenericArray1<T> = Array<T>;
 
   // Arrays of various types using the GenericArray
   const studentIDs: GenericArray<number> = [101, 102, 103, 104];
