@@ -13,11 +13,13 @@
     smartWatch: T;
   }
 
-  const coolDeveloper: Developer<{
+  type HonorWatch = {
     brand: string;
     model: string;
     display: string;
-  }> = {
+  };
+
+  const coolDeveloper: Developer<HonorWatch> = {
     name: "Rasel",
     computer: {
       brand: "Mac",
@@ -31,12 +33,14 @@
     },
   };
 
-  const NewDeveloper: Developer<{
+  type AppleWatch = {
     brand: string;
     model: string;
     heartTrack: boolean;
     sleepTrack: boolean;
-  }> = {
+  };
+
+  const NewDeveloper: Developer<AppleWatch> = {
     name: "Mr Cool Dev",
     computer: {
       brand: "HP",
