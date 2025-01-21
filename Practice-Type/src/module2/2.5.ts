@@ -27,5 +27,14 @@
   const newGenObj2 = createArrayWithGeneric2<string, number>("BD", 222);
 
   const reas1 = createArray("BD");
+
+  const addCourseToStudent = <T>(student: T) => {
+    const course = "Next Level Development";
+
+    return {
+      ...student,
+      course,
+    };
+  };
   //
 }
