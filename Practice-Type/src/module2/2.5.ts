@@ -10,6 +10,10 @@
     return [param];
   };
 
+  const createArrayWithGeneric2 = <T, Q>(param1: T, param2: Q): [T, Q] => {
+    return [param1, param2];
+  };
+
   type User = {
     id: number;
     name: string;
@@ -19,6 +23,8 @@
     id: 234,
     name: "Rasel",
   });
+
+  const newGenObj2 = createArrayWithGeneric2<string, number>("BD", 222);
 
   const reas1 = createArray("BD");
   //
