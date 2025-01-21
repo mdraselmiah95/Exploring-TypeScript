@@ -1,7 +1,7 @@
 {
   //
 
-  // interface -> generic
+  //TODO: interface -> generic
 
   interface Developer<T, X> {
     name: string;
