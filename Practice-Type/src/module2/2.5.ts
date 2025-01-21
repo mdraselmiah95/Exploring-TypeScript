@@ -36,5 +36,15 @@
       course,
     };
   };
+
+  const student1 = addCourseToStudent({
+    name: "rasel 1",
+    email: "rasel@gmail.com",
+  });
+  const student2 = addCourseToStudent({
+    name: "rasel 1",
+    hasWatch: "Apple",
+  });
+
   //
 }
