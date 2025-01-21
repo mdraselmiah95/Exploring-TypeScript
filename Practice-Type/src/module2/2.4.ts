@@ -3,7 +3,7 @@
 
   // interface -> generic
 
-  interface Developer<T> {
+  interface Developer<T, X> {
     name: string;
     computer: {
       brand: string;
@@ -11,6 +11,7 @@
       releaseYear: number;
     };
     smartWatch: T;
+    bike?: X;
   }
 
   type HonorWatch = {
@@ -19,7 +20,7 @@
     display: string;
   };
 
-  const coolDeveloper: Developer<HonorWatch> = {
+  const coolDeveloper: Developer<HonorWatch, null> = {
     name: "Rasel",
     computer: {
       brand: "Mac",
@@ -33,14 +34,19 @@
     },
   };
 
-  type AppleWatch = {
+  interface AppleWatch {
     brand: string;
     model: string;
     heartTrack: boolean;
     sleepTrack: boolean;
-  };
+  }
 
-  const NewDeveloper: Developer<AppleWatch> = {
+  interface YamahaBike {
+    Model: string;
+    engineCapacity: string;
+  }
+
+  const NewDeveloper: Developer<AppleWatch, YamahaBike> = {
     name: "Mr Cool Dev",
     computer: {
       brand: "HP",
@@ -52,6 +58,10 @@
       model: "watch 2",
       heartTrack: true,
       sleepTrack: true,
+    },
+    bike: {
+      Model: "Yamaha",
+      engineCapacity: "180cc",
     },
   };
 
