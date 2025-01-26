@@ -18,5 +18,13 @@
     return obj[key];
   };
 
+  const user = {
+    name: "Rasel",
+    age: 30,
+    address: "DHK",
+  };
+
+  const result1 = getPropertyValue(user, "name");
+
   //
 }
