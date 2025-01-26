@@ -1,9 +1,8 @@
 {
   //
   // TODO : Promise
-
-  const createPromise = () => {
-    return new Promise((resolve, reject) => {
+  const createPromise = (): Promise<string> => {
+    return new Promise<string>((resolve, reject) => {
       const data: string = "This is a test data 🚀";
       if (data) {
         resolve(data);
@@ -12,6 +11,13 @@
       }
     });
   };
+  // calling the create promise function
+  const showData = async () => {
+    const data = await createPromise();
+    console.log({ data });
+  };
+
+  showData();
 
   //
 }
