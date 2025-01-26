@@ -2,10 +2,18 @@
   //
   // TODO : Promise
 
-  const getTodo = async () => {
+  type Todo = {
+    id: number;
+    userId: number;
+    title: string;
+    completed: boolean;
+  };
+
+  const getTodo = async (): Promise<Todo> => {
     const res = await fetch("https://jsonplaceholder.typicode.com/todos");
     const data = await res.json();
     console.log({ data });
+    return data;
   };
 
   getTodo();
