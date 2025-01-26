@@ -24,7 +24,14 @@
     address: "DHK",
   };
 
+  const car = {
+    modal: "Toyota 102",
+    year: 2033,
+  };
+
   const result1 = getPropertyValue(user, "name");
+
+  const result2 = getPropertyValue(car, "modal");
 
   //
 }
