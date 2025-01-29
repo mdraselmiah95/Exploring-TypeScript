@@ -13,6 +13,7 @@ import { util } from "prettier";
     bike: string;
     car: string;
     ship: string;
+    plane: string;
   };
 
   type CheckVehicle<T> = T extends keyof Sheikh ? true : false;
