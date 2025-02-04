@@ -11,5 +11,8 @@
     }
   };
 
+  const result1 = add(2, 9);
+  console.log({ result1 });
+
   //
 }
