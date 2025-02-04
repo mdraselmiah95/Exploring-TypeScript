@@ -12,7 +12,8 @@
   };
 
   const result1 = add(2, 9);
-  console.log({ result1 });
+  const result2 = add("6", "0");
+  console.log({ result1, result2 });
 
   //
 }
