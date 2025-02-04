@@ -15,5 +15,20 @@
   const result2 = add("6", "0");
   console.log({ result1, result2 });
 
+  // in guard
+  type NormalUser = {
+    name: string;
+  };
+
+  type AdminUser = {
+    name: string;
+    role: "Admin";
+  };
+
+  const getUser = (user: NormalUser | AdminUser) => {
+    if ("role" in user) {
+    }
+  };
+
   //
 }
