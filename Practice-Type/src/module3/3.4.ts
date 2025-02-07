@@ -45,5 +45,8 @@
   const dog1 = new Dog("Dog Boss", "Dog");
   const cat1 = new Cat("Coot Cat", "Cat");
 
+  getAnimal(dog1);
+  getAnimal(cat1);
+
   //
 }
