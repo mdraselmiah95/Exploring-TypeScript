@@ -3,7 +3,7 @@
   class BankAccount {
     readonly id: number;
     public name: string;
-    private _balance: number;
+    protected _balance: number;
 
     constructor(id: number, name: string, balance: number) {
       this.id = id;
@@ -17,6 +17,12 @@
 
     getBalance() {
       return this._balance;
+    }
+  }
+
+  class StudentAccount extends BankAccount {
+    testAc() {
+      this._balance = this._balance;
     }
   }
 
