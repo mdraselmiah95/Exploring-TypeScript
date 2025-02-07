@@ -2,15 +2,17 @@
   // static
 
   class Counter {
-    count: number = 0;
+    static count: number = 0;
     increment() {
-      return (this.count = this.count + 1);
+      return (Counter.count = Counter.count + 1);
     }
 
     decrement() {
-      return (this.count = this.count - 1);
+      return (Counter.count = Counter.count - 1);
     }
   }
+
+  const instance1 = new Counter();
 
   //
 }
