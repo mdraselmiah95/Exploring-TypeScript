@@ -19,5 +19,17 @@
     }
   }
 
+  const getSleepingHours = (params: Person) => {
+    params.getSleep();
+  };
+
+  const person1 = new Person();
+  const person2 = new Person();
+  const person3 = new Person();
+
+  getSleepingHours(person1);
+  getSleepingHours(person2);
+  getSleepingHours(person3);
+
   //
 }
