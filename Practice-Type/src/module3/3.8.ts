@@ -31,5 +31,20 @@
   getSleepingHours(person2);
   getSleepingHours(person3);
 
+  class Shape {
+    getArea(): number {
+      return 0;
+    }
+  }
+
+  class Circle extends Shape {
+    radius: number;
+
+    constructor(radius: number) {
+      super();
+      this.radius = radius;
+    }
+  }
+
   //
 }
