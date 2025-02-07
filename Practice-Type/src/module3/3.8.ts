@@ -44,6 +44,25 @@
       super();
       this.radius = radius;
     }
+
+    getArea(): number {
+      return Math.PI * this.radius * this.radius;
+    }
+  }
+
+  // height * width
+  class Rectangle extends Shape {
+    height: number;
+    width: number;
+    constructor(height: number, width: number) {
+      super();
+      this.width = width;
+      this.height = height;
+    }
+
+    getArea(): number {
+      return this.height * this.width;
+    }
   }
 
   //
