@@ -34,6 +34,14 @@
     }
   }
 
+  const getAnimal = (animal: Animal) => {
+    if (animal instanceof Dog) {
+      animal.makeBark();
+    } else if (animal instanceof Cat) {
+      animal.makeMeaw();
+    }
+  };
+
   const dog1 = new Dog("Dog Boss", "Dog");
   const cat1 = new Cat("Coot Cat", "Cat");
 
