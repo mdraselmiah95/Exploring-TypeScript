@@ -14,5 +14,15 @@
     }
   }
 
+  class Dog extends Animal() {
+    constructor(name: string, species: string) {
+      super(name, species);
+    }
+
+    makeBark() {
+      console.log("I am barking");
+    }
+  }
+
   //
 }
