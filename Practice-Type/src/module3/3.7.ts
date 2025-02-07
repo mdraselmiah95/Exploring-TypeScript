@@ -3,16 +3,20 @@
 
   class Counter {
     static count: number = 0;
-    increment() {
+    static increment() {
       return (Counter.count = Counter.count + 1);
     }
 
-    decrement() {
+    static decrement() {
       return (Counter.count = Counter.count - 1);
     }
   }
 
-  const instance1 = new Counter();
+  //   const instance1 = new Counter();
+  console.log(Counter.increment());
+
+  //   const instance2 = new Counter();
+  console.log(Counter.decrement());
 
   //
 }
