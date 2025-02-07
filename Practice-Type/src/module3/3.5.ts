@@ -14,5 +14,16 @@
     addDeposit(amount: number) {
       this.balance = this.balance + amount;
     }
+
+    getBalance() {
+      return this.balance;
+    }
   }
+
+  const newIbnAcc = new BankAccount(12, "Mr. Ibn", 10000);
+  newIbnAcc.addDeposit(5000);
+
+  const myBala = newIbnAcc.getBalance();
+
+  console.log(myBala);
 }
