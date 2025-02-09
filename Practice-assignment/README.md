@@ -83,8 +83,3 @@ const employee: EmployeeDetails = {
 Understanding and using **union** and **intersection types** in TypeScript is essential for writing more flexible, maintainable, and type-safe code. Whether you are working with APIs that may return multiple types or combining different interfaces into one cohesive object, these types will significantly enhance your development process. By embracing these powerful features, you’ll be able to prevent errors early, improve code quality, and make your TypeScript projects more robust.
 
 Happy coding!
-
-```
-
-This blog post is designed to be informative and beginner-friendly, explaining union and intersection types clearly with examples and use cases. Let me know if you'd like any changes!
-```
