@@ -20,5 +20,9 @@
     }
   }
 
+  const HondaCar = new Car();
+
+  HondaCar.startEngine();
+
   //
 }
